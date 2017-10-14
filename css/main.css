@@ -1,0 +1,14 @@
+form{
+	padding: 7vw;
+	margin-top: 3vw;
+	background:rgba(47, 121, 148, 0.8);
+	border-radius: 10px;
+}
+.background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/1048.jpg);
+	background-size: 100% 100%;
+	filter: blur(1px) brightness(50%);
+}
