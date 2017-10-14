@@ -4,8 +4,14 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="../css/main.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+        <script src="../js/angular.min.js"></script>
   </head>
   <body>
+      <div ng-app='MyApp'>
+          <div ng-controller="app">
+              {{name}}
+          </div>
+      </div>
     <div class="background"></div>
     <div class="container-fluid">
         <div class="row">
@@ -46,4 +52,11 @@
 </div>
     <script type="text/javascript" src="../js/js.js" ></script>
   </body>
+  <script>
+    angular.module('MyApp',[]).controller('app', ['$scope', function($scope) {
+  $scope.name ="Irina"
+}]
+
+    )
+  </script>
 </html>
